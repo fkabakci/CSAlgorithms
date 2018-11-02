@@ -5,8 +5,6 @@ package com.fatihkabakci.arrStr;
  * @author fkabakci 
  * Replace all spaces with the character %20. Use same char array. No extra space is used.
  */
-
-
 public class ReplaceSpaceWithCharacters {
 	private static int getNumberOfSpaces(char[] str, int length) {
 		int numberOfSpaces = 0;
@@ -34,8 +32,8 @@ public class ReplaceSpaceWithCharacters {
 	}
 	public static void main(String[] args) {
 		// extra space at the end of the string has to be !
-		char[] input = "Fatih Kabakci SF USA       ".toCharArray();
-		replaceAllSpaces(input, 20);
+		char[] input = "Fatih SF USA    ".toCharArray();
+		replaceAllSpaces(input, 12);
 		System.out.println(input);
 	}
 }
