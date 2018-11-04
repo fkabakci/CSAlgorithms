@@ -1,4 +1,4 @@
-package com.fatihkabakci.arrStr;
+package com.fatihkabakci.string;
 
 import java.util.HashMap;
 import java.util.Map;
