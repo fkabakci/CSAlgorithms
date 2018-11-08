@@ -1,14 +1,15 @@
 package com.fatihkabakci.linkedlist;
 
-public class LinkedList {
+public class DoublyLinkedList {
 
 	Node head;
+	Node tail;
 	
-	public LinkedList() {
+	public DoublyLinkedList() {
 		
 	}
 	
-	public LinkedList(Node head) {
+	public DoublyLinkedList(Node head) {
 		this.head = head;
 	}
 
@@ -20,6 +21,7 @@ public class LinkedList {
 	public void push(int data) {
 		if (head == null) {
 			head = new Node(data);
+			tail = head;
 			return;
 		}
 
@@ -27,7 +29,10 @@ public class LinkedList {
 		while (temp.next != null)
 			temp = temp.next;
 
-		temp.next = new Node(data);
+		Node n = new Node(data);
+		temp.next = n;
+		n.prev = temp;
+		tail = n;
 	}
 
 	/**
@@ -149,9 +154,18 @@ public class LinkedList {
 		}
 		System.out.println();
 	}
+	
+	public void printFromTail() {
+		Node temp = tail;
+		while (temp != null) {
+			System.out.print(temp.data + "->");
+			temp = temp.prev;
+		}
+		System.out.println();
+	}
 
 	public static void main(String[] args) {
-		LinkedList l = new LinkedList();
+		DoublyLinkedList l = new DoublyLinkedList();
 		l.push(1);
 		l.push(2);
 		l.push(3);
