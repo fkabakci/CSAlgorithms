@@ -43,8 +43,10 @@ public class Intersection {
 		LinkedList first = new LinkedList();
 		first.head = n1;
 		first.head.next = n6;
-		first.head.next.next = n3;
-		first.head.next.next.next = n4;
+		first.head.next.next = n5;
+		first.head.next.next.next = n2;
+		first.head.next.next.next.next = n3;
+		first.head.next.next.next.next.next = n4;
 		
 		LinkedList second = new LinkedList();
 		second.head = n2;
