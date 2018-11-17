@@ -10,7 +10,7 @@ public class Queue<T> {
 	Node<T> head;
 	Node<T> tail;
 	
-	public void add(T data) {
+	public void enqueue(T data) {
 		Node<T> newNode = new Node<T>(data);
 		
 		if(tail == null) {
@@ -22,7 +22,7 @@ public class Queue<T> {
 		}
 	}
 	
-	public T remove() {
+	public T dequeue() {
 		if(head == null)
 			return null;
 		
@@ -44,16 +44,16 @@ public class Queue<T> {
 	
 	public static void main(String[] args) {
 		Queue<Integer> q = new Queue<Integer>();
-		q.add(1);
-		q.add(2);
-		q.add(3);
-		q.add(4);
-		q.add(5);
-		System.out.println(q.remove());
-		System.out.println(q.remove());
-		System.out.println(q.remove());
-		System.out.println(q.remove());
-		System.out.println(q.remove());
-		System.out.println(q.remove());
+		q.enqueue(1);
+		q.enqueue(2);
+		q.enqueue(3);
+		q.enqueue(4);
+		q.enqueue(5);
+		System.out.println(q.dequeue());
+		System.out.println(q.dequeue());
+		System.out.println(q.dequeue());
+		System.out.println(q.dequeue());
+		System.out.println(q.dequeue());
+		System.out.println(q.dequeue());
 	}
 }
