@@ -1,4 +1,4 @@
-package com.fatihkabakci.treesgraphs;
+package com.fatihkabakci.treesgraphs.graph;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

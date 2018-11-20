@@ -1,4 +1,4 @@
-package com.fatihkabakci.treesgraphs;
+package com.fatihkabakci.treesgraphs.graph;
 
 public class Node<V> {
 	V v;
