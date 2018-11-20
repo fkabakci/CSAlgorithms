@@ -3,7 +3,7 @@ package com.fatihkabakci.treesgraphs.tree;
 /**
  * 
  * @author fkabakci
- * Check if a binary search tree is a valid one
+ * Find out the next node of a given node in a binary search tree (In-order successor)
  * Solution: Next node in a binary search tree is the right-mostleft node !
  * If there is no right node, then look up the parent node until you find the next node which is a parent node.
  * while(bubble up) {
