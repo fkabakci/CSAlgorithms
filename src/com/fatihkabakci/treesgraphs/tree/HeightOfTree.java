@@ -3,7 +3,7 @@ package com.fatihkabakci.treesgraphs.tree;
 /**
  * 
  * @author fkabakci
- * Find out the maximum depth (height) of a binary tree
+ * Find out the maximum depth (minimum height) of a binary tree (Recursive Solution)
  */
 public class HeightOfTree {
 
