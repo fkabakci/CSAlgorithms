@@ -4,6 +4,16 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 
+ * @author fkabakci
+ * Find out all possible ways to fill up an array in given a binary search tree.
+ * Input:
+ * 						10
+ * 					 8		15
+ * 
+ * Output: {{10, 8, 15}, {10, 15, 8}}
+ */
 public class BSTOrderToArray {
 	public List<LinkedList<Integer>> getAllSequences(Node root) {
 		List<LinkedList<Integer>> all = new ArrayList<LinkedList<Integer>>();
