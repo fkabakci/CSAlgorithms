@@ -6,8 +6,6 @@ package com.fatihkabakci.string;
  * Given an array, find the ways to reach out to target by addition and subtraction operations
  */
 public class NumberOfWaysTargetInArray {
-	public static int ways = 0;
-	
 	public static int findTotalWays(int[] arr, int i, int acc, int target) {
 		if (i >= arr.length && target != acc) 
 	        return 0;
